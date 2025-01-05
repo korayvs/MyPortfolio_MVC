@@ -13,17 +13,18 @@ namespace MyPortfolio_MVC.Controllers
         public ActionResult Index()
         {
             var values = db.TblMessages.Where(m => m.IsRead == false).ToList();
-            return View();
+            return View(values);
         }
 
         public ActionResult MessageDetail(int id)
-        {
+        {            
             var value = db.TblMessages.Find(id);
             value.IsRead = true;
             db.SaveChanges();
             return View(value);
         }
 
+        //Okundu olarak işaretle yapılabilir
         [HttpPost]
         public ActionResult MakeMessageRead(int id)
         {
