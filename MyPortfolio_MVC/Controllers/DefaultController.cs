@@ -1,9 +1,11 @@
 ﻿using MyPortfolio_MVC.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Newtonsoft.Json.Linq;
 
 namespace MyPortfolio_MVC.Controllers
 {
@@ -44,16 +46,25 @@ namespace MyPortfolio_MVC.Controllers
         [HttpGet]
         public PartialViewResult SendMessage()
         {
-            return PartialView();
+            //Sosyal medya verileri ve iletişim bilgileri gönderme
+            List<TblSocialMedia> sclMedia = db.TblSocialMedias.ToList();
+            ViewBag.SocialMedia = sclMedia;
+            var value = db.TblContacts.ToList();
+            return PartialView(value);
         }
 
         [HttpPost]
         public ActionResult SendMessage(TblMessage model)
         {
-            model.IsRead = false;
-            db.TblMessages.Add(model);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                model.DataSent = DateTime.Now;
+                model.IsRead = false;
+                db.TblMessages.Add(model);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(model);
         }
 
         public PartialViewResult DefaultAbout()
@@ -65,6 +76,24 @@ namespace MyPortfolio_MVC.Controllers
         public PartialViewResult DefaultEducation()
         {
             var values = db.TblEducations.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult DefaultSocialMedia()
+        {
+            var values = db.TblSocialMedias.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult DefaultTestimonial()
+        {
+            var values = db.TblTestimonials.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult DefaultContact()
+        {
+            var values = db.TblContacts.ToList();
             return PartialView(values);
         }
     }

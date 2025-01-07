@@ -28,16 +28,16 @@ namespace MyPortfolio_MVC.Controllers
             string email = Session["email"].ToString();
             var admin = db.TblAdmins.FirstOrDefault(x => x.Email == email);
             
-            if (admin.Password == model.Password)
+            if (admin.Password.Trim() == model.Password.Trim())
             {
-                if (model.ImageFile != null)
-                {
-                    var currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
-                    var saveLocation = currentDirectory + "images\\";
-                    var fileName = Path.Combine(saveLocation, model.ImageFile.FileName);
-                    model.ImageFile.SaveAs(fileName);
-                    admin.ImageUrl = "/images/" + model.ImageFile.FileName;
-                }
+                //if (model.ImageFile != null)
+                //{
+                //    var currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                //    var saveLocation = currentDirectory + "images\\";
+                //    var fileName = Path.Combine(saveLocation, model.ImageFile.FileName);
+                //    model.ImageFile.SaveAs(fileName);
+                //    admin.ImageUrl = "/images/" + model.ImageFile.FileName;
+                //}
                 admin.Name = model.Name;
                 admin.Surname = model.Surname;
                 admin.Email = model.Email;

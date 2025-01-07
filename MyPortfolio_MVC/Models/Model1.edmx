@@ -100,6 +100,7 @@
           <Property Name="Subject" Type="nvarchar" MaxLength="50" />
           <Property Name="MessageContent" Type="nvarchar" MaxLength="500" />
           <Property Name="IsRead" Type="bit" />
+          <Property Name="DataSent" Type="datetime" />
         </EntityType>
         <EntityType Name="TblProjects">
           <Key>
@@ -250,6 +251,7 @@
           <Property Name="Subject" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="MessageContent" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="IsRead" Type="Boolean" />
+          <Property Name="DataSent" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="TblProject">
           <Key>
@@ -414,6 +416,7 @@
           <EntitySetMapping Name="TblMessages">
             <EntityTypeMapping TypeName="MyPortfolioDbModel.TblMessage">
               <MappingFragment StoreEntitySet="TblMessages">
+                <ScalarProperty Name="DataSent" ColumnName="DataSent" />
                 <ScalarProperty Name="MessageId" ColumnName="MessageId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
