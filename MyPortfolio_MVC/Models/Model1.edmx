@@ -79,8 +79,8 @@
           <Property Name="ExperienceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="CompanyName" Type="nvarchar" MaxLength="100" />
           <Property Name="Title" Type="nvarchar" MaxLength="50" />
-          <Property Name="StartDate" Type="datetime" />
-          <Property Name="EndDate" Type="datetime" />
+          <Property Name="StartDate" Type="date" Nullable="false" />
+          <Property Name="EndDate" Type="date" />
           <Property Name="Description" Type="nvarchar" MaxLength="100" />
         </EntityType>
         <EntityType Name="TblExpertises">
@@ -230,8 +230,8 @@
           <Property Name="ExperienceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="CompanyName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="StartDate" Type="DateTime" Precision="3" />
-          <Property Name="EndDate" Type="DateTime" Precision="3" />
+          <Property Name="StartDate" Type="DateTime" Precision="0" Nullable="false" />
+          <Property Name="EndDate" Type="DateTime" Precision="0" />
           <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="TblExpertis">

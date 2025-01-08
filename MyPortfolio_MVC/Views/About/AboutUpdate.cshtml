@@ -16,7 +16,7 @@
     <br />
     <div>
         <label>Açıklama</label>
-        @Html.TextBoxFor(x => x.Discription, new { @class = "form-control" })
+        @Html.TextAreaFor(x => x.Discription, new { @class = "form-control" })
     </div>
     <br />
     <div>
@@ -29,5 +29,5 @@
         <input type="file" name="CvFile" accept=".pdf" class="form-control" />
     </div>
     <br />
-    <button class="btn btn-outline-primary">Kaydet</button>
+    <button class="btn btn-danger">Güncelle</button>
 </form>

@@ -7,11 +7,52 @@
 
 <h2>Banner</h2>
 
-<table class="table table-bordered">
+<table class="table table-bordered table-hover">
     <tr>
         <th>#</th>
         <th>Başlık</th>
         <th>Açıklama</th>
-        <th>Açıklama</th>
+        <th>Anasayfamda</th>
+        <th>Banner</th>
+        <th>Sil</th>
     </tr>
+
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td>@item.Title</td>
+            <td>@item.Description</td>
+            <td>
+                @if (item.IsShown == true)
+                {
+                    <span>Gösteriliyor</span>
+                }
+
+                else
+                {
+                    <span>Gizli</span>
+                }
+            </td>
+
+            <td>
+                <a href="/Banner/ShowBanner/@item.Bannerid" class="btn btn-outline-warning">Göster</a>
+            </td>
+
+            <td>
+                <a href="/Banner/DeleteBanner/@item.Bannerid" class="btn btn-outline-danger">Sil</a>
+            </td>
+
+        </tr>
+    }
+
 </table>
+
+@if (TempData["bannerDeleteError"] != null)
+{
+    <div class="alert alert-danger">@TempData["bannerDeleteError"]</div>
+}
+
+<br />
+<a href="/Banner/CreateBanner" class="btn btn-outline-success">Yeni Banner Ekle</a>
