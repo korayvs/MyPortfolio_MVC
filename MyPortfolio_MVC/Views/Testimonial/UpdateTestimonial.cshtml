@@ -1,0 +1,40 @@
+﻿@model MyPortfolio_MVC.Models.TblTestimonial
+@{
+    ViewBag.Title = "UpdateTestimonial";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Referanslarım Güncelleme Sayfası</h2>
+<br />
+
+<form method="post" enctype="multipart/form-data">
+
+    @Html.HiddenFor(x => x.TestimonialId)
+
+    <div>
+        <label>Upload Image</label>
+        <input type="file" name="ImageFile" class="form-control" />
+    </div>
+    <br />
+
+    <div>
+        <label>Ad Soyad</label>
+        @Html.TextBoxFor(x => x.NameSurname, new { @class = "form-control" })
+    </div>
+    <br />
+
+    <div>
+        <label>Ünvan</label>
+        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    </div>
+    <br />
+
+    <div>
+        <label>Yorum</label>
+        @Html.TextBoxFor(x => x.Comment, new { @class = "form-control" })
+    </div>
+    <br />
+
+    <button class="btn btn-info">Güncelle</button>
+
+</form>
