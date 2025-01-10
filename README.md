@@ -5,7 +5,7 @@
 - Ayrıca, UI üzerinden Admin paneline giriş ve çıkış yapmabilme seçenekleri mevcuttur.
 - Profil bilgilerini güncelleyebilme imkânına da sahiptir.
 - Projede, belirli bir süre sonunda otomatik çıkış işlemini gerçekleştiren özel bir attribute (SessionTimeOut) geliştirilmiştir. Bu attribute, tanımlanan süre dolduğunda admin panelinden otomatik olarak çıkış yapılmasını sağlamaktadır.
-## **Kullanılan Teknolojiler:**
+## **Kullanılan Teknolojiler**
 - MVC5
 - ASP.NET
 - DB First
