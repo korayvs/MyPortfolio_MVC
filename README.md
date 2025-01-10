@@ -11,7 +11,7 @@
 - DB First
 - Entity Framework
 - SQL Server
-## **Projeye ait ekran görüntüleri**
+## **Projeye Ait Ekran Görüntüleri**
 ### **UI tarafı**
 ![home1](https://github.com/user-attachments/assets/95100f3f-023a-4cf2-8bae-f1be60d2ef15)
 ![home2](https://github.com/user-attachments/assets/6799be52-e46e-4351-920b-ec57b71154f1)
