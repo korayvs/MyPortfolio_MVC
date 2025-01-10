@@ -1,4 +1,4 @@
-#**MyPortfolio Project**
+# **MyPortfolio Project**
 -Bu proje, MVC5 teknolojileri kullanılarak geliştirilmiş bir portföy projesidir.
 -Admin ve Kullanıcı Arayüzü (UI) tarafı olmak üzere iki kısımdan oluşmaktadır.
 -Admin panelinde yapılan değişiklikler, eşzamanlı olarak UI kısmına da yansıtılmaktadır.
