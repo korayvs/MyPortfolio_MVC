@@ -13,7 +13,7 @@
 - SQL Server
 ## **Projeye Ait Ekran Görüntüleri**
 ### **Kullanıcı Arayüzü (UI)**
-[![home1](https://github.com/user-attachments/assets/3a31aa4e-1251-4093-811e-2c2a9325afb3)](https://i.hizliresim.com/4e19mkr.png)
+![home1](https://github.com/user-attachments/assets/3a31aa4e-1251-4093-811e-2c2a9325afb3)
 ![home2](https://github.com/user-attachments/assets/6799be52-e46e-4351-920b-ec57b71154f1)
 ![home3](https://github.com/user-attachments/assets/69b1baca-55d1-44de-ade5-2b48a261d289)
 ![home4](https://github.com/user-attachments/assets/ec07da7c-d5c0-4a9f-8bad-35bbc07d92f3)
