@@ -226,7 +226,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="images\random man.jpg" />
     <Content Include="img\admin-50.png" />
+    <Content Include="img\c-25-25-proje.png" />
     <Content Include="img\mp-50.png" />
+    <Content Include="img\mvc-stok.png" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
@@ -326,12 +328,14 @@
     <Content Include="Templates\luther-1.0.0\images\icons\icon-tag.svg" />
     <Content Include="Templates\luther-1.0.0\images\portfolio\fuji%402x.jpg" />
     <Content Include="Templates\luther-1.0.0\images\portfolio\fuji.jpg" />
+    <Content Include="Templates\luther-1.0.0\images\portfolio\gallery\c-2525-proje.jpg" />
     <Content Include="Templates\luther-1.0.0\images\portfolio\gallery\g-fuji.jpg" />
     <Content Include="Templates\luther-1.0.0\images\portfolio\gallery\g-lamp.jpg" />
     <Content Include="Templates\luther-1.0.0\images\portfolio\gallery\g-minimalismo.jpg" />
     <Content Include="Templates\luther-1.0.0\images\portfolio\gallery\g-rucksack.jpg" />
     <Content Include="Templates\luther-1.0.0\images\portfolio\gallery\g-sanddunes.jpg" />
     <Content Include="Templates\luther-1.0.0\images\portfolio\gallery\g-skaterboy.jpg" />
+    <Content Include="Templates\luther-1.0.0\images\portfolio\gallery\mvcstok.jpg" />
     <Content Include="Templates\luther-1.0.0\images\portfolio\lamp%402x.jpg" />
     <Content Include="Templates\luther-1.0.0\images\portfolio\lamp.jpg" />
     <Content Include="Templates\luther-1.0.0\images\portfolio\minimalismo%402x.jpg" />

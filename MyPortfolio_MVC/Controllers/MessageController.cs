@@ -44,7 +44,7 @@ namespace MyPortfolio_MVC.Controllers
             var value = db.TblMessages.Find(id);
             db.TblMessages.Remove(value);
             db.SaveChanges();
-            return RedirectToAction("Index", "MarkMessageRead");
+            return RedirectToAction("Index");
         }
     }
 }
